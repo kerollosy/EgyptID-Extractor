@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyptian National ID Extractor</title>
+</head>
+
+<body>
+    <h1>Enter Egyptian National ID</h1>
+    <form id="nationalIdForm">
+        <label for="national_id">National ID:</label>
+        <input type="text" id="national_id" name="national_id" required>
+        <button type="submit">Extract</button>
+    </form>
+
+    <div id="extractedInfo">
+        <h2>Extracted Information</h2>
+        <p id="gender">Gender: </p>
+        <p id="birthdate">Birth Date: </p>
+        <p id="governorate">Governorate: </p>
+        <p id="age">Age: </p>
+    </div>
+
+    <div id="error" style="color: red;"></div>
+
+    <script src="extractor.js"></script>
+</body>
+
+</html>
